@@ -11,6 +11,7 @@
     />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <header>
@@ -33,13 +34,13 @@
     <section class="block block--dark block--skewed-left hero">
       <div class="container grid grid--1x2">
         <header class="block__header hero__content">
-          <h1 class="block__heading">Cloud Hosting for Pros</h1>
+          <h1 class="block__heading" data-aos="fade-right">Cloud Hosting for Pros</h1>
           <p class="hero__tagline">
             Deploy your websites in less than 60 seconds
           </p>
           <a href="#" class="btn btn--accent btn--stretched">Get Started</a>
         </header>
-        <picture>
+        <picture data-aos="zoom-in-up">
           <source
             type="image/webp"
             srcset="images/banner.webp 1x, images/banner@2x.webp 2x"
@@ -53,7 +54,7 @@
       </div>
     </section>
 
-    <section class="block container block-domain">
+    <section class="block container block-domain" data-aos="zoom-in-up">
       <header class="block__header">
         <h2>Starting at $9 per month</h2>
         <p>
@@ -83,7 +84,7 @@
       </ul>
     </section>
 
-    <section class="block container block-plans">
+    <section class="block container block-plans" data-aos="fade-up">
       <div class="grid grid--1x3">
         <div class="plan">
           <div class="card card--secondary">
@@ -151,7 +152,7 @@
     </section>
 
     <section class="block container">
-      <header class="block__header">
+      <header class="block__header" data-aos="zoom-in">
         <h2>Host on the Cloud to Keep Growing</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium,
@@ -159,7 +160,7 @@
         </p>
       </header>
       <article class="grid grid--1x2 feature">
-        <div class="feature__content">
+        <div class="feature__content" data-aos="fade-right">
           <span class="icon-container">
             <svg class="icon icon--primary">
               <use xlink:href="images/sprite.svg#easy"></use>
@@ -172,7 +173,7 @@
           </p>
           <a href="#" class="link-arrow">Learn More</a>
         </div>
-        <picture>
+        <picture data-aos="zoom-in-left">
           <source
             type="image/webp"
             srcset="images/easy.webp 1x, images/easy@2x.webp 2x"
@@ -186,7 +187,7 @@
       </article>
 
       <article class="grid grid--1x2 feature">
-        <div class="feature__content">
+        <div class="feature__content" data-aos="fade-up-left">
           <span class="icon-container">
             <svg class="icon icon--primary">
               <use xlink:href="images/sprite.svg#computer"></use>
@@ -199,7 +200,7 @@
           </p>
           <a href="#" class="link-arrow">Learn More</a>
         </div>
-        <picture>
+        <picture data-aos="zoom-in-right">
           <source
             type="image/webp"
             srcset="images/fast.webp 1x, images/fast@2x.webp 2x"
@@ -213,7 +214,7 @@
       </article>
 
       <article class="grid grid--1x2 feature">
-        <div class="feature__content">
+        <div class="feature__content" data-aos="fade-left">
           <span class="icon-container">
             <svg class="icon icon--primary">
               <use xlink:href="images/sprite.svg#wordpress"></use>
@@ -226,7 +227,7 @@
           </p>
           <a href="#" class="link-arrow">Learn More</a>
         </div>
-        <picture>
+        <picture data-aos="fade-right">
           <source
             type="image/webp"
             srcset="images/wordpress.webp 1x, images/wordpress@2x.webp 2x"
@@ -240,7 +241,7 @@
       </article>
 
       <article class="grid grid--1x2 feature">
-        <div class="feature__content">
+        <div class="feature__content" data-aos="fade-left">
           <span class="icon-container">
             <svg class="icon icon--primary">
               <use xlink:href="images/sprite.svg#clock"></use>
@@ -253,7 +254,7 @@
           </p>
           <a href="#" class="link-arrow">Learn More</a>
         </div>
-        <picture>
+        <picture data-aos="zoom-in-up">
           <source
             type="image/webp"
             srcset="images/support.webp 1x, images/support@2x.webp 2x"
@@ -268,11 +269,11 @@
     </section>
 
     <section class="block block--dark block--skewed-right block-showcase">
-      <header class="block__header">
+      <header class="block__header" data-aos="fade-up">
         <h2>User-friendly Control Panel</h2>
       </header>
       <div class="container grid grid--1x2">
-        <picture class="block-showcase__image">
+        <picture class="block-showcase__image" data-aos="fade-right">
           <source
             type="image/webp"
             srcset="images/ipad.webp 1x, images/ipad@2x.webp 2x"
@@ -283,7 +284,7 @@
           />
           <img src="images/ipad.png" alt="" />
         </picture>
-        <ul class="list">
+        <ul class="list" data-aos="zoom-in">
           <li>
             <div class="media">
               <div class="media__image">
@@ -339,7 +340,7 @@
       </div>
     </section>
 
-    <section class="block">
+    <section class="block" data-aos="zoom-in-up">
       <header class="block__header">
         <h2>What our Customers are Saying</h2>
         <p>
@@ -387,20 +388,20 @@
       </div>
     </section>
 
-      <div class="container">
-        <div class="callout callout--primary callout-signup">
-          <div class="grid grid--1x2">
-            <div class="callout__content">
-              <h2 class="callout__heading">Ready To Get Started?</h2>
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed quos
-                fuga impedit, nisi fugiat ratione nemo facilis modi odit nihil!
-              </p>
-            </div>
-            <a href="#" class="btn btn--secondary btn--stretched">Get Started</a>
+    <div class="container">
+      <div class="callout callout--primary callout-signup">
+        <div class="grid grid--1x2">
+          <div class="callout__content">
+            <h2 class="callout__heading">Ready To Get Started?</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed quos
+              fuga impedit, nisi fugiat ratione nemo facilis modi odit nihil!
+            </p>
           </div>
+          <a href="#" class="btn btn--secondary btn--stretched">Get Started</a>
         </div>
       </div>
+    </div>
 
     <footer class="block block--dark footer">
       <div class="container grid footer__sections">
@@ -485,5 +486,9 @@
       </div>
     </footer>
     <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
