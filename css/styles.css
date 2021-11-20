@@ -504,7 +504,7 @@ a {
 .callout__heading {
   color: #fff;
   margin-top: 0;
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 .callout .btn {
@@ -781,6 +781,7 @@ a {
 
 .footer {
   background: #232323;
+  padding-bottom: 2rem;
 }
 
 .footer__section {
@@ -835,6 +836,7 @@ a {
 
   .footer__brand {
     order: -1;
+    transform: translateY(-4rem);
   }
 
   .footer__copyright {
@@ -857,6 +859,6 @@ a {
 
 /* Sign-up Callout */
 .callout-signup {
-  transform: translateY(5rem);
+  transform: translateY(4rem);
 }
 
