@@ -126,7 +126,6 @@ a {
 .list {
   list-style: none;
   padding-left: 0;
-  color: var(--color-headings);
 }
 .list--inline .list__item {
   display: inline-block;
@@ -185,7 +184,7 @@ a {
   cursor: pointer;
   font-size: 1.8rem;
   font-weight: 600;
-  padding: 2rem 3rem;
+  padding: 2rem 4vw;
   margin: 1rem 0;
   outline: 0;
   text-align: center;
@@ -267,6 +266,7 @@ a {
   border: 0;
   flex-grow: 1;
   padding: 1.5rem 2rem;
+  width: 0;
 }
 .input-group .btn {
   margin: 4px;
@@ -410,7 +410,7 @@ a {
   content: close-quote;
 }
 .quote__author {
-  font-style: 3rem;
+  font-size: 3rem;
   font-weight: 600;
   font-style: normal;
   margin-bottom: 0;
@@ -470,6 +470,10 @@ a {
   top: 3rem;
 }
 
+.testimonial .quote {
+  margin: 2rem 0;
+  font-size: 110%;
+}
 @media screen and (min-width: 768px) {
   .testimonial .quote,
   .testimonial .quote__author {
@@ -598,7 +602,7 @@ a {
   padding-bottom: calc(var(--padding-vertical) + 4rem);
 }
 .block--skewed-right {
-  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 90%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 95%);
   padding-bottom: calc(var(--padding-vertical) + 4rem);
 }
 .container {
@@ -695,8 +699,9 @@ a {
 }
 
 .block-domain__prices {
+  color: var(--color-headings);
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 6rem);
   font-size: 2rem;
   font-weight: bold;
@@ -708,6 +713,11 @@ a {
 @media screen and (min-width: 768px) {
   .block-domain__prices {
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  }
+}
+@media screen and (min-width: 2560px) {
+  .block-domain .btn {
+    padding: 3rem 4rem;
   }
 }
 
@@ -844,3 +854,9 @@ a {
     cursor: auto;
   }
 }
+
+/* Sign-up Callout */
+.callout-signup {
+  transform: translateY(5rem);
+}
+
